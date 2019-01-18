@@ -1,0 +1,31 @@
+body    {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+div {
+    height: 80px;
+    width: 80px;
+    background-color: yellow;
+    border-radius: 40px; 
+    margin: 10px; 
+   
+}
+
+circle:nth-child(3n) {
+    background-color: green;
+}
+circle:nth-child(5n) {
+    background-color: yellow;
+}
+circle:nth-child(15n) {
+    background-color: blue;
+}
+.circle:nth-child(3n) ::before {
+    background-color: blue;
+    content: "fizz";
+    top: 30px;
+    left: 22px;
+    color: white;
+}

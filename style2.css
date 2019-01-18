@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: brown;
+    line-height: 1.6;
+}
+/*-------------------main-------------------*/
+#main{
+    background-image: url(grass-pic.jpg);
+    height: 100vh;
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: end;
+    padding:0 20px;
+}
+#main h1{
+    font-size: 50px;
+}
+#main p{
+    font-size: 20px;
+    text-align: center;
+}
+#main .button{
+    font-size: 18px;
+    text-decoration: none;
+    color: brown;
+    border: brown 2px solid;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+#main .button:hover{
+    background: brown;
+    color: white;
+}
+/*-------------container-a--------------*/
+.container-a{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    text-align: center;
+    background: #abdcf8;
+}
+.container-a section{
+    border:1px black solid;
+    padding:10px;
+    color: white;
+    padding: 10px;
+    /* background: blue; */
+    /* width: 30%; */
+}
+.info-a{
+    background: green;
+}
+.info-b{
+    background: brown;
+}
+.info-c{
+    background: black;
+}
+@media (min-width: 600px){
+    .container-a{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+@media (min-width: 800px){
+    .container-a section{
+        width: 30%;
+    }
+}
+/*------ container-1------------*/
+.container-1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.container-1 div{
+    border:1px black solid;
+    padding:10px;
+}
+.box-1{
+    flex:4;
+    order:2
+}
+.box-2{
+    flex:1;
+    order:1;
+}
+.box-3{
+    Flex:1;
+    order:3;
+}
+/*-----------------signup--------------*/
+.form{
+    display: flex;
+    flex-direction: column;
+    margin-block-end: 100px;
+    border:1px black solid;
+    background: #b8b9b9;
+    padding: 10px;
+}
+.form input{
+    /* border:1px black solid; */
+    text-align:left;
+    padding: 20px;
+}
+@media (min-width: 600px){
+    .form{
+        align-items: center;
+    }
+}
+.form .button:hover{
+    background: #4ce66d;
+    color: brown;
+}
+/* calltoaction */
